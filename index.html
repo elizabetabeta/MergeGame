@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <link rel="stylesheet" href="./style.css">
+  <title>Merge Game</title>
+</head>
+<body>
+  <div class="container">
+    <canvas id="gameCanvas"></canvas>
+
+    <!-- Start Screen -->
+    <div id="gameStartDiv">
+      <h1>🎮 MERGE GAME</h1>
+      <p>
+        Click on tiles to select them. Click another tile to merge (if same level) or swap positions!
+        <br><br>
+        Merge tiles to reach level 7 and WIN!
+        <br>
+        Run out of space and it's GAME OVER!
+        <br><br>
+        Click the egg 🥚 to spawn more tiles!
+      </p>
+      <button id="gameStartBtn">START GAME</button>
+    </div>
+
+    <!-- End Screen -->
+    <div id="gameEndDiv">
+      <h2 id="gameWinLoseSpan">Win!</h2>
+      <div class="score-display">Final Score: <span id="gameEndScoreSpan">0</span></div>
+      <button id="gameEndBtn">TRY AGAIN</button>
+    </div>
+  </div>
+
+  <!-- Canvas Confetti Library -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.0/dist/confetti.browser.min.js"></script>
+
+  <!-- Your game script -->
+  <script type="module" src="./main.js"></script>
+</body>
+</html>
