@@ -1,1 +1,1 @@
-Game available at: https://catching-game-beta.netlify.app/ 
+Game available at: https://dragon-merging.netlify.app/
